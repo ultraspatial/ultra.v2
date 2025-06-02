@@ -14,7 +14,6 @@
 /* Global Styles */
 body {
   background-color: var(--bgcolor);
-  background-image: url('assets/attachments/bg1.mp4');
   color: var(--fgcolor);
   font-family: var(--bodyfont);
   font-size: 1.05rem;
@@ -65,6 +64,15 @@ hr {
 }
 .splashtext {
   font-size: 4rem;
+  text-align: center;
+}
+.centertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  width: 100vw;
 }
 
 /* Button Styles */

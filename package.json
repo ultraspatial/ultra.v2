@@ -1,0 +1,20 @@
+{
+  "name": "ultra.v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy-img": "^6.0.2",
+    "luxon": "^3.6.1",
+    "sharp": "^0.34.1"
+  }
+}

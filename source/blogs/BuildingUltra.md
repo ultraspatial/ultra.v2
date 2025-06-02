@@ -6,4 +6,4 @@ layout: layouts/posts.njk
 tags: blog
 ---
 
-# Slapping On Python
+im so fucking joever bros

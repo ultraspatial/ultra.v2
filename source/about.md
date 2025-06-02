@@ -14,6 +14,7 @@ layout: layouts/base.njk
 ---
 # To-Do
 - Make the website feel more alive.
+- Suck my dick crazy style lowkey
   - Add more images, use more image processing.
   -
 

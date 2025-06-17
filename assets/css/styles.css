@@ -1,13 +1,14 @@
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
 /* CSS Variables */
+
 :root {
   --bgcolor: #000000;
-  --fgcolor: #ffffff;
-  --bodyfont: 'Inconsolata', sans-serif;
+  --fgcolor: #f6f6f6;
+  --bodyfont: 'Geist Mono', sans-serif;
+  --navfont: 'Geist Mono', sans-serif;
   --titlefont: 'Bricolage Grotesque', sans-serif;
 }
 
@@ -16,7 +17,7 @@ body {
   background-color: var(--bgcolor);
   color: var(--fgcolor);
   font-family: var(--bodyfont);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.2;
   margin: 0;
 }
@@ -37,7 +38,7 @@ p {
   margin: 0;
 }
 a {
-  color: rgb(67, 133, 190);
+  color: #5555FF;
   font-weight: 800;
   text-decoration: underline 2px;
 }
@@ -47,7 +48,7 @@ img {
   width: 50%;
 }
 ul {
-  list-style: '✱ ' inside;
+  list-style: '● ' inside;
   padding: 0;
   margin: 0;
 }
@@ -59,22 +60,9 @@ hr {
   border-top: 5px solid var(--fgcolor);
   margin: 0.5rem 0;
 }
-.bn {
-  font-family: 'Hind Siliguri', sans-serif;
+pre, code {
+  background-color: #18181a;
 }
-.splashtext {
-  font-size: 4rem;
-  text-align: center;
-}
-.centertext {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 40rem;
-  width: 100vw;
-}
-
 /* Button Styles */
 .button {
   font-family: var(--bodyfont);
@@ -120,23 +108,22 @@ td {
 
 /* Header Styles */
 .site-header {
-  background-color: var(--bgcolor);
-    font-family: var(--bodyfont);
-    padding: 1rem;
+    background-color: var(--bgcolor);
+    font-family: var(--navfont);
+    font-size: 1rem;
+    padding: 0.6rem;
     margin-top: 0%;
     margin-bottom: 1rem;
-    border-bottom: var(--fgcolor) 2px solid;
+    border-bottom: var(--fgcolor) 5px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .site-header a {
     font-weight: 300;
     text-decoration: none;
     color: var(--fgcolor);
     font-size: larger;
-  }
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   .main-nav ul {
     list-style: none;

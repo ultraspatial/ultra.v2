@@ -5,15 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello, World! | ultraspatial</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
-<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/x-icon" href="/assets/attachments/favicon.png">
 </head>
 <body>
   <!-- Include the Header -->
   <header class="site-header">
-  <div class="container">
-    <!-- Site Logo/Title -->
     <a href="/" class="site-title">ultraspatial</a>
-    <!-- Navigation Menu -->
     <nav class="main-nav">
       <ul>
         <li><a href="/about/">[About]</a></li>
@@ -22,18 +19,210 @@
         <li><a href="/blog/">[Blog]</a></li>
       </ul>
     </nav>
-  </div>
 </header>
 
 <main>
   <div class="postinfo">
     <h1>Hello, World!</h1>
-    <small>Posted 3 May 2025 | </small>
+    <small>Posted 3 May 2025 | Tags: intro, reference</small>
   </div>
   <div class="postcontent">
-    <h1>Hello, World!</h1>
-<h1>Design</h1>
-<h1>Development</h1>
+    <h1>Headers</h1>
+<pre><code class="language-md"># This is a heading 1
+## This is a heading 2
+### This is a heading 3 
+#### This is a heading 4
+##### This is a heading 5
+###### This is a heading 6
+</code></pre>
+<h1>This is a heading 1</h1>
+<h2>This is a heading 2</h2>
+<h3>This is a heading 3</h3>
+<h4>This is a heading 4</h4>
+<h5>This is a heading 5</h5>
+<h6>This is a heading 6</h6>
+<hr>
+<h1>Emphasis</h1>
+<pre><code class="language-md">*This text will be italic*
+_This will also be italic_
+</code></pre>
+<p><em>This text will be italic</em>
+<em>This will also be italic</em></p>
+<pre><code class="language-md">**This text will be bold**
+__This will also be bold__
+</code></pre>
+<p><strong>This text will be bold</strong>
+<strong>This will also be bold</strong></p>
+<pre><code class="language-md">_You **can** combine them_
+</code></pre>
+<p><em>You <strong>can</strong> combine them</em></p>
+<pre><code class="language-md">text `Inline Code` text		
+~~Mistaken text.~~	
+&lt;ins&gt;Underline&lt;/ins&gt;
+</code></pre>
+<p>text <code>Inline Code</code> text		
+<s>Mistaken text.</s>	
+<ins>Underline</ins></p>
+<pre><code class="language-md">&lt;center&gt;This text is centered.&lt;/center&gt;
+&lt;p style=&quot;text-align:center&quot;&gt;Center this text&lt;/p&gt;
+&lt;font color=&quot;red&quot;&gt;This text is red!&lt;/font&gt;
+&lt;p style=&quot;color:blue&quot;&gt;Make this text blue.&lt;/p&gt;
+</code></pre>
+<center>This text is centered.</center>
+<p style="text-align:center">Center this text</p>
+<font color="red">This text is red!</font>
+<p style="color:blue">Make this text blue.</p>
+<h1>Lists</h1>
+<pre><code class="language-md">+ Item 1
++ Item 2
+  + Item 2a
+  - Item 2b
+  - Item 2c
+
+1. Item 1
+2. Item 2
+3. Item 3
+   4. Item 3a
+   5. Item 3b
+</code></pre>
+<ul>
+<li>Item 1</li>
+<li>Item 2
+<ul>
+<li>Item 2a</li>
+</ul>
+<ul>
+<li>Item 2b</li>
+<li>Item 2c</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3
+<ol>
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h1>Images</h1>
+<pre><code class="language-md">![Engelbart](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)
+</code></pre>
+<p><img src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" alt="Engelbart"></p>
+<p>With caption</p>
+<pre><code>&lt;figure&gt;
+    &lt;img src=&quot;https://www.markdownguide.org/assets/images/albuquerque.jpg&quot;
+         alt=&quot;Albuquerque, New Mexico&quot;&gt;
+    &lt;figcaption&gt;A single track trail outside of Albuquerque, New Mexico.&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+<figure>
+    <img src="https://www.markdownguide.org/assets/images/albuquerque.jpg"
+         alt="Albuquerque, New Mexico">
+    <figcaption>A single track trail outside of Albuquerque, New Mexico.</figcaption>
+</figure>
+<hr>
+<h1>Links</h1>
+<p>External links</p>
+<p>Markdown style links can be used to refer to either external objects, such as web pages, or an internal page or image.</p>
+<pre><code class="language-md">http://obsidian.md - automatic!
+[Obsidian](http://obsidian.md)
+</code></pre>
+<p>http://obsidian.md - automatic!
+<a href="http://obsidian.md">Obsidian</a></p>
+<h1>Reference Links</h1>
+<pre><code class="language-md">[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself][]
+
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+</code></pre>
+<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a></p>
+<h1>Blockquotes</h1>
+<pre><code class="language-md">&gt; Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.
+
+\- Doug Engelbart, 1961
+</code></pre>
+<blockquote>
+<p>Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.</p>
+</blockquote>
+<p>- Doug Engelbart, 1961</p>
+<hr>
+<h1>Inline code</h1>
+<pre><code class="language-md">Text inside `backticks` on a line will be formatted like code.
+</code></pre>
+<p>Text inside <code>backticks</code> on a line will be formatted like code.</p>
+<hr>
+<h1>Code blocks</h1>
+<pre><code>```js
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```</code></pre>
+<pre><code class="language-js">function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+</code></pre>
+<pre><code class="language-md">    Text indented with a tab is formatted like this, and will also look like a code block in preview. 
+</code></pre>
+<p>Text indented with a tab is formatted like this, and will also look like a code block in preview.</p>
+<hr>
+<h1>Tables</h1>
+<p>You can create tables by assembling a list of words and dividing them with hyphens <code>-</code> (for the first row), and then separating each column with a pipe <code>|</code>:</p>
+<pre><code class="language-md">First Header | Second Header
+------------ | ------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content from cell 1</td>
+<td>Content from cell 2</td>
+</tr>
+<tr>
+<td>Content in the first column</td>
+<td>Content in the second column</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<pre><code class="language-md">Tables can be justified with a colon | Another example with a long title
+:----------------|-------------:
+because of the `:` | these will be justified
+
+If you put links in tables, they will work, but if you use Piped Links, the pipe must be escaped with a `\` to prevent it being read as a table element.
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Tables can be justified with a colon</th>
+<th style="text-align:right">Another example with a long title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">because of the <code>:</code></td>
+<td style="text-align:right">these will be justified</td>
+</tr>
+</tbody>
+</table>
+<hr>
 
   </div>
 </main>

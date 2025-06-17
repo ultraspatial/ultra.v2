@@ -1,5 +1,10 @@
 [
   {
+    "name": "SleepCalc",
+    "description": "Tells you the optimal time to set your wake-up alarm, based on a standard sleep cycle.",
+    "link": "https://ultraspatial.github.io/SleepCalc/"
+  },
+  {
     "name": "CIESearch",
     "description": "Past paper URL generator for Cambridge A-Level Exams",
     "link": "https://ultraspatial.github.io/CIESearch/"

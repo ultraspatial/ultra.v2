@@ -4,6 +4,6 @@ layout: layouts/base.njk
 html: true
 ---
 
-<div class="centertext">
-<h1 class="splashtext">Welcome to Ultraspace!</h1>
-</div>
+# Welcome To Ultraspatial.Net!
+Best Viewed In Your Dream | 1920x1080 | 
+![bnuuy](\assets\attachments\frontimg.jpg)
